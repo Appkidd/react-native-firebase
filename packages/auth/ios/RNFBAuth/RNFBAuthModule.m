@@ -952,6 +952,8 @@ RCT_EXPORT_METHOD(useEmulator:
     credential = [FIREmailAuthProvider credentialWithEmail:authToken link:authTokenSecret];
   } else if ([provider compare:@"github.com" options:NSCaseInsensitiveSearch] == NSOrderedSame) {
     credential = [FIRGitHubAuthProvider credentialWithToken:authToken];
+  } else if ([provider compare:@"microsoft.com" options:NSCaseInsensitiveSearch] == NSOrderedSame) {
+    credential = [FIROAuthProvider credentialWithProviderID:provider IDToken:authToken accessToken:authTokenSecret];
   } else if ([provider compare:@"phone" options:NSCaseInsensitiveSearch] == NSOrderedSame) {
     credential =
         [[FIRPhoneAuthProvider provider] credentialWithVerificationID:authToken verificationCode:authTokenSecret];

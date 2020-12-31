@@ -26,6 +26,7 @@ import PhoneAuthListener from './PhoneAuthListener';
 import EmailAuthProvider from './providers/EmailAuthProvider';
 import FacebookAuthProvider from './providers/FacebookAuthProvider';
 import GithubAuthProvider from './providers/GithubAuthProvider';
+import MicrosoftAuthProvider from './providers/MicrosoftAuthProvider';
 import GoogleAuthProvider from './providers/GoogleAuthProvider';
 import OAuthProvider from './providers/OAuthProvider';
 import PhoneAuthProvider from './providers/PhoneAuthProvider';
@@ -41,6 +42,7 @@ const statics = {
   PhoneAuthProvider,
   GoogleAuthProvider,
   GithubAuthProvider,
+  MicrosoftAuthProvider,
   TwitterAuthProvider,
   FacebookAuthProvider,
   OAuthProvider,
